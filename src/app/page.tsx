@@ -9,6 +9,7 @@ import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@
 import { StatusBadge } from "@/components/shared/StatusBadge";
 import { AlertTriangle, CheckCircle2, ListChecks, Clock, TrendingUp, BarChart3 } from "lucide-react";
 import { format, differenceInDays, parseISO } from 'date-fns';
+import { cn } from "@/lib/utils";
 
 // Helper function to calculate overall progress
 const calculateOverallProgress = (project: Project | null): number => {
